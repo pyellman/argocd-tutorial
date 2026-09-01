@@ -27,7 +27,7 @@ spec:
       - name: nginx-rollouts
         # image: 192.168.1.2:8085/nginx:130a5b21-3166-4ab7-a27c-51f64a198f3
         # my local docker kind-registry at kind-registry:5000 is aliased to localhost:5001 in the kind cluster containerd config
-        image: localhost:5001/nginx:e4237bdf-44e7-4468-84cf-0147c97b2d59
+        image: localhost:5001/nginx:595d358a-2163-4e25-a1ea-f396d86d4f54
         # image: localhost:5001/hello-app:1.0
         ports:
         - containerPort: 80
