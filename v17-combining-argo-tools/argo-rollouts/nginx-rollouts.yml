@@ -26,9 +26,9 @@ spec:
       containers:
       - name: nginx-rollouts
         # my local docker kind-registry at kind-registry:5000 is aliased to localhost:5001 in the kind cluster containerd config
-        image: kind-registry:5000/nginx:b2eedb8e-4557-421a-9f60-6e93453ae510
+        image: kind-registry:5000/nginx:4bd51c47-90b3-45ec-9804-04b7852f06de
         # or target it directly using kubernetes dns name and native port
-        # image: kind-registry:5000/nginx:b2eedb8e-4557-421a-9f60-6e93453ae510
+        # image: kind-registry:5000/nginx:4bd51c47-90b3-45ec-9804-04b7852f06de
         ports:
         - containerPort: 80
 ---
