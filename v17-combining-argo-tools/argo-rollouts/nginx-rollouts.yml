@@ -25,10 +25,11 @@ spec:
     spec:
       containers:
       - name: nginx-rollouts
-        # my local docker kind-registry at kind-registry:5000 is aliased to localhost:5001 in the kind cluster containerd config
+        # my local docker kind-registry at kind-registry:5000 is aliased to localhost:5001 in
+        # the kind cluster containerd config so, could and probably should use localhost:5001 here
+        # image: localhost:5001/nginx:stable-alpine
+        # or target the kubernetes dns name and native port
         image: kind-registry:5000/nginx:a0f58838-c87c-4a95-8318-6ffe179a0a57
-        # or target it directly using kubernetes dns name and native port
-        # image: kind-registry:5000/nginx:a0f58838-c87c-4a95-8318-6ffe179a0a57
         ports:
         - containerPort: 80
 ---
